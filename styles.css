@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+:root{
+    --black:#181722;
+     --white:#F0F0F0;
+     --box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+
+}
+*{
+    font-family: 'Quicksand',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: none;
+    text-transform: capitalize;
+    transition: 2s linear;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar-track{
+    background-color: var(--white);
+   
+    border-radius: 5rem;
+
+}
+.header{
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 999;
+    padding: 1.4rem 7%;
+
+}
+.header .navbar a{
+    font-size: 2rem;
+    margin-right: 3rem;
+    color:var(--black)
+    
+}
+.header .navbar a:hover{
+    border-bottom: .1rem solid black;
+    padding-bottom: 4rem;
+}
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(cake.png) no-repeat;
+    background-size:cover;
+    background-position:center center;
+
+}
+.home .homecontent{
+    width: 50%;
+    float:left;
+    text-align: center;
+
+}
+.home .homecontent h2{
+    font-size: 7rem;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+    line-height: 7rem;
+    color:var(--white);
+    text-shadow: var(--box-shadow);  
+}
+.home .homecontent p{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+.home .homecontent .home-btn button{
+    height: 3rem;
+}
+.home .homecontent .home-btn button{
+    font-size: 1.8rem;
+    background-color:#FF4162;
+    color:var(--white);
+    border-radius: .7rem;
+    padding:.7rem 2rem;
+    cursor: pointer;
+}
+.home .homecontent .home-btn button{
+font-size: 2rem;
+}
+section{
+    padding: 2rem 7%;
+}
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    color: var(--black);
+}
+.product-row{
+    margin-bottom: 4rem;
+    display: flex;
+    align-items: center;
+}
+.product-row .box{
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    background-color: var(--white);
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    gap: 1,5rem;
+    border-radius: 3rem;
+}
+.product .product-row .img img{
+    height: 700%;
+    width: 70%;
+
+}
+.product .product-row .img img{
+    transform: scale(1.0);
+}
+.product .product-row .content{
+    margin-bottom: 4rem;
+}
+.product .product-row .product-content h3{
+font-size: 3rem;
+color: var(--black);
+
+}
+.product .product-row .product-content p{
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    color: var(--black);
+}
+.product .product-row .product-content .ordernow{
+height: 3rem;
+margin-top: 2rem;
+}
+.product .product-row .product-content .ordernow button{
+font-size: 1,8rem;
+background-color: var(--black);
+color: var(--white);
+border-radius: 7rem;
+padding: .7rem 2rem;
+cursor: pointer;
+}
+.product .product-row .product-content .ordernow button:hover{
+    font-size: 2rem;
+}
